@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# react-rest-api-typescript-boilerplate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I will be glad to any suggestions and corrections, for I am constantly trying to improve the structure of my projects :)
 
-## Available Scripts
+My email for contact - phoenix.ofdarkness@mail.ru
 
-In the project directory, you can run:
+## Pages
 
-### `npm start`
+This folder contains the components that form the pages. (Can use Containers, Smart, Ordinary, Simple, and UI components in their implementation)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Containers
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Container components that can use services and custom hooks are stored in this folder. (They may use Smart, Ordinary, Simple and UI components in their implementation.)
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Smart
 
-### `npm run build`
+This folder contains all smart components, which can use both the repository and custom hooks, but which cannot use services. (Can use in their implementation Ordinary, Simple and UI components)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Ordinary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This folder stores all the complex components that can't use the repository or custom hooks. (Can use Simple and UI components in their implementation)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Simple
 
-### `npm run eject`
+This folder stores all auxiliary, silly components, which must not use any custom hooks or repository. (Can use UI components in their implementation)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### UI
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This folder contains all components that replace the native components (for example: button, label, radio, select, h1, h2, h3, and so on). These components may contain some logic, using hooks and storage (for example in the Select component)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Core
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This folder contains all of the logic of the project. From services to config.
 
-## Learn More
+### Config
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This folder contains configuration files of example (for example: URI of servers or some limits/patterns/routes)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Constants
+
+There are constants in this folder (for example: messages, units, mime-types)
+
+### Hooks
+
+This folder contains all your hooks.
+
+### Models
+
+In this folder there are all your models which come from API server. Try not to specify attached models in descriptions of the models themselves, it is better to do it in description of the response type of corresponding service.
+
+### Schemes
+
+This folder contains your table schemes or form schemes.
+
+### Services
+
+This folder stores your services for API-server communication.
+
+### Store
+
+This folder stores (if used with MobX) store context and global store schemes.
+
+### Theme (for styled-components)
+
+This folder stores your project's theme(s).
+
+### Types
+
+This folder stores all domain types
+
+### Utils
+
+This folder stores all auxiliary functions
