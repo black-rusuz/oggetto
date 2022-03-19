@@ -7,8 +7,8 @@ function Auth() {
         <div className="auth">
             <h1 className="auth__header">Добро пожаловать в систему тестирования!</h1>
             <span className="auth__comment">Пожалуйста, авторизируйтесь</span>
-            <TextField className="auth__input" id="outlined-basic" label="E-mail" variant="outlined" />
-            <TextField className="auth__input" id="outlined-basic" label="Пароль" variant="outlined" />
+            <TextField className="auth__input" color="secondary" id="outlined-basic" label="E-mail" variant="outlined" />
+            <TextField className="auth__input" color="secondary" id="outlined-basic" label="Пароль" variant="outlined" />
             <Button className="auth__submit" variant="contained">Войти</Button>
         </div>
     );
