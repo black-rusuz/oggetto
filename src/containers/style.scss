@@ -1,0 +1,26 @@
+.userPage__wrapper {
+  .userPage__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 50px;
+
+    .userPage__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  .userPage__main {
+
+  }
+
+  .userPage__footer {
+
+  }
+}
