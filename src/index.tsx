@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {StoreProvider} from "@core/store";
 import {App} from "./app";
 import reportWebVitals from "./reportWebVitals";
-import "./styles/index.css";
+import "@styles/index.scss"
 import {theme} from "@core/theme/mui";
 import {ThemeProvider} from "@mui/material";
 
