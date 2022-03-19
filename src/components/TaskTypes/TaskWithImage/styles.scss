@@ -1,0 +1,17 @@
+.task-with-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .task-with-image__img {
+    margin-bottom: 24px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .task-with-image__answer {
+    width: 100%;
+  }
+}

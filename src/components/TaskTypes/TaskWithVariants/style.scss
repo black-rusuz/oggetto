@@ -1,12 +1,33 @@
 .task-with-variants {
   display: grid;
 
+
+  .task-with-variants__item {
+    margin-bottom: 16px;
+  }
+
   .task-with-variants__label {
     font-size: 24px;
     font-weight: 500;
     display: grid;
     grid-template-columns: 1em auto;
     gap: 1.2em;
+
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    padding: 25px;
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    &:hover {
+      border-color: #FFDD00;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   .task-with-variants__label:focus-within {
@@ -22,9 +43,11 @@
     color: #000;
     width: 1.15em;
     height: 1.15em;
-    border: 3px solid #C2C2C2;
+    border: 2px solid #C2C2C2;
     border-radius: 50%;
     transform: translateY(-0.075em);
+
+    align-self: end;
 
     display: grid;
     place-content: center;
@@ -49,4 +72,9 @@
   input[type="radio"]:checked::before {
     transform: scale(1);
   }
+
+  input[type=radio]:checked + .task-with-variants__label {
+    background: #ffc5c5;
+  }
+
 }

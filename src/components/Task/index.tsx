@@ -8,6 +8,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import {Button, Pagination} from "@mui/material";
+import TaskWithImage from "@components/TaskTypes/TaskWithImage/TaskWithImage";
+import TaskWithCode from "@components/TaskTypes/TaskWithCode/TaskWithCode";
 
 // interface ITaskProps {
 //     title: string,
@@ -42,7 +44,9 @@ function Task() {
       </div>
 
       <div className="task__answer">
-        <TaskWithVariants/>
+        {/*<TaskWithVariants/>*/}
+        {/*<TaskWithImage/>*/}
+        <TaskWithCode/>
       </div>
 
       <Pagination className="task__pagination" count={10} color="primary" />
