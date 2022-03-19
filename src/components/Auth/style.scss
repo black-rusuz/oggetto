@@ -4,14 +4,13 @@
   background: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-self: center;
   border-radius: 10px;
 
   .auth__header {
-    margin-bottom: 34px;
-    padding: 0 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    margin-bottom: 28px;
+    width: 90%;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -20,8 +19,6 @@
 
   .auth__comment {
     margin-bottom: 28px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -30,14 +27,11 @@
   }
 
   .auth__input {
-    margin-bottom: 28px;
+    width: 100%;
+    margin-bottom: 18px;
 
     * {
       color: #939393;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
       font-size: 14px;
       line-height: 22px;
     }
@@ -51,11 +45,14 @@
     background: #FFED00;
     border-radius: 4px;
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    text-transform: none;
+
+    &:hover {
+      background: #FFDD00;
+    }
   }
 }

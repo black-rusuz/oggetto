@@ -2,14 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-
 import { StoreProvider } from "@core/store";
 import { theme } from "@core/theme";
-
 import { CommonStyles } from "@styles";
-
 import { App } from "./app";
 import reportWebVitals from "./reportWebVitals";
+import "./styles/index.css";
 
 const appElement = document.getElementById("app");
 
