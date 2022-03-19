@@ -8,6 +8,18 @@ export const admin = {
     findOne: () => `/admin`,
 };
 
+export const adminTests = {
+    findOne: () => `/admin/tests`,
+};
+
+export const adminTasks = {
+    findOne: () => `/admin/tasks`,
+};
+
+export const adminPeople = {
+    findOne: () => `/admin/people`,
+};
+
 
 export const productAPIRoutes = {
     findOne: (id: string | number) => `${serverURI}/product/${id}`,

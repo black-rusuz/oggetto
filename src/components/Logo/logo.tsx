@@ -1,6 +1,6 @@
 import {memo} from "react";
-import logo from "./logo.png"
-import logo_mono from "./logo_mono.png"
+import logo from "@assets/images/logo.png"
+import logo_mono from "@assets/images/logo_mono.png"
 import "./style.scss"
 
 function Logo(props: any) {

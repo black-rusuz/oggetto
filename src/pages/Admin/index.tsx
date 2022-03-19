@@ -1,9 +1,9 @@
 import {memo} from "react";
-import Dashboard from "@containers/Dashboard";
+import Dashboard from "@containers/Dashboard/Dashboard";
 
 function Admin() {
     return (
-        <Dashboard/>
+        <Dashboard userName={"Анна Белюченко"}/>
     );
 }
 

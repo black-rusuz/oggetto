@@ -1,0 +1,35 @@
+.dashboard__wrapper {
+  .dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+
+    .dashboard__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  .dashboard__content {
+    display: flex;
+
+    .dashboard__aside {
+      padding: 20px 25px;
+      flex: 20;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .dashboard__main {
+      flex: 80;
+    }
+  }
+}
