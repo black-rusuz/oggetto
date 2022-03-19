@@ -25,3 +25,18 @@ body {
     text-transform: inherit;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F1F8F8;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #C4C4C4;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F1F8F8;
+}
