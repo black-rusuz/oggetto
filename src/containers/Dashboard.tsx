@@ -1,6 +1,6 @@
 import {memo} from "react";
 
-function Admin(props: any) {
+function Dashboard(props: any) {
     return (
         <>
             <header>
@@ -14,4 +14,4 @@ function Admin(props: any) {
     );
 }
 
-export default memo(Admin);
+export default memo(Dashboard);

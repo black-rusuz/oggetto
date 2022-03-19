@@ -17,10 +17,16 @@
   }
 
   .userPage__main {
+    margin: 46px 110px;
 
   }
 
   .userPage__footer {
-
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 14px;
+    background: #FFDD00;
   }
 }
