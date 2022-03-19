@@ -11,8 +11,10 @@ function User(props: any) {
             </header>
             <main className="userPage__main">
                 {props.children}
+                //TODO: Сюды пиздато пихать кастомных детей
             </main>
             <footer className="userPage__footer">
+                //TODO: Сюды таймер ебануть как-то
             </footer>
         </div>
     );

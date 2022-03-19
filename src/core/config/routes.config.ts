@@ -1,14 +1,18 @@
 import { serverURI } from "./api.config";
 
 export const test = {
-	findOne: () => `/test`,
+    findOne: () => `/test`,
+};
+
+export const admin = {
+    findOne: () => `/admin`,
 };
 
 
 export const productAPIRoutes = {
-	findOne: (id: string | number) => `${serverURI}/product/${id}`,
+    findOne: (id: string | number) => `${serverURI}/product/${id}`,
 };
 
 export const productBrowserRoutes = {
-	findOne: (to: string | number = ":id") => `/product/${to}`,
+    findOne: (to: string | number = ":id") => `/product/${to}`,
 };
