@@ -1,0 +1,44 @@
+.task {
+  display: flex;
+  flex-direction: column;
+
+  .task__header {
+    margin-bottom: 36px;
+    .task__header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      margin-bottom: 24px;
+      .task__title {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      .task__end {
+        border-bottom: 1px solid #000000;
+        border-bottom-style: dashed;
+        cursor: pointer;
+
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover {
+          border-bottom-color: #EFB900;
+        }
+      }
+    }
+
+    .task__subtitle {
+      font-size: 24px;
+    }
+  }
+
+  .task__answer {
+    margin-bottom: 42px;
+  }
+  .task__pagination {
+    align-self: center;
+  }
+
+}

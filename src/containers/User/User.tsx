@@ -12,9 +12,6 @@ function User(props: any) {
             <main className="userPage__main">
                 {props.children}
             </main>
-            <div className="userPage__timer">
-                //TODO: Сюды таймер ебануть как-то
-            </div>
         </div>
     );
 }

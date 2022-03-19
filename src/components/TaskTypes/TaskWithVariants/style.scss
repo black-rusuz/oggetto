@@ -1,0 +1,52 @@
+.task-with-variants {
+  display: grid;
+
+  .task-with-variants__label {
+    font-size: 24px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 1.2em;
+  }
+
+  .task-with-variants__label:focus-within {
+    color: var(--form-control-color);
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+
+    color: #000;
+    width: 1.15em;
+    height: 1.15em;
+    border: 3px solid #C2C2C2;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--task-with-variants__label-color);
+    /* Windows High Contrast Mode */
+    background-color: #000;
+  }
+
+  input[type="radio"]:checked {
+    border: 3px solid #000;
+  }
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+}
