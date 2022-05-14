@@ -6,7 +6,7 @@ import Task from "@components/Task";
 
 function Test() {
     return(
-        <User testHeader={"Тест на пидора"}>
+        <User testHeader={"Тест на хорошего человека"}>
             {/*<Welcome/>*/}
             <Task/>
             {/*<Ending/>*/}

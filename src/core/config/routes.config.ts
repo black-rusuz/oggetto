@@ -4,6 +4,14 @@ export const test = {
     findOne: () => `/test`,
 };
 
+export const testWelcome = {
+    findOne: () => `/test/welcome`,
+};
+
+export const testEnding = {
+    findOne: () => `/test/ending`,
+};
+
 export const admin = {
     findOne: () => `/admin`,
 };
